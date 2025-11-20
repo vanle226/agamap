@@ -15,14 +15,65 @@ const App: React.FC = () => {
             <h1 className="text-2xl font-bold text-slate-800 tracking-tight">Hair Analysis Tool</h1>
             <p className="text-slate-500 text-sm">Công cụ trực quan hóa sức khỏe da đầu</p>
           </div>
-          {selectedGender && (
-            <button 
-              onClick={() => setSelectedGender(null)}
-              className="text-sm text-slate-500 hover:text-rose-500 font-medium transition-colors"
+          <div className="flex items-center gap-4">
+            <a
+              href="https://minoxidil.com.vn"
+              target="_blank"
+              rel="noopener noreferrer"
+              className="flex items-center gap-2 rounded-lg px-3 py-2 transition hover:bg-slate-50"
+              aria-label="Viet Beauty"
             >
-              Đổi giới tính
-            </button>
-          )}
+              <svg
+                xmlns="http://www.w3.org/2000/svg"
+                viewBox="0 0 120 140"
+                className="h-12 w-12"
+                role="img"
+                aria-hidden="true"
+              >
+                <title>Viet Beauty</title>
+                <path
+                  d="M60 6C35 20 15 46 15 77c0 26 17 52 45 62c28-10 45-36 45-62C105 46 85 20 60 6Z"
+                  fill="#1bb3a5"
+                  stroke="#0a3f46"
+                  strokeWidth="5"
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                />
+                <path
+                  d="M90 28c11 13 18 29 18 49c0 24-16 48-38 57"
+                  fill="#1bb3a5"
+                  opacity="0.75"
+                />
+                <path
+                  d="M60 28v84M60 52c-8 8-17 14-26 17M60 70c-10 10-22 19-36 24M60 91c-9 10-18 17-29 22"
+                  fill="none"
+                  stroke="#0a3f46"
+                  strokeWidth="5"
+                  strokeLinecap="round"
+                />
+                <text
+                  x="60"
+                  y="126"
+                  textAnchor="middle"
+                  fontSize="14"
+                  fill="#0a3f46"
+                  fontFamily="'Inter', 'Helvetica', 'Arial', sans-serif"
+                  fontWeight="700"
+                  letterSpacing="1.5"
+                >
+                  VIET BEAUTY
+                </text>
+              </svg>
+            </a>
+            {selectedGender && (
+              <button
+                onClick={() => setSelectedGender(null)}
+                className="text-sm text-slate-500 hover:text-rose-500 font-medium transition-colors"
+              >
+                Đổi giới tính
+              </button>
+            )}
+          </div>
         </div>
       </header>
 

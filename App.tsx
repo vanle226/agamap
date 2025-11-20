@@ -23,47 +23,11 @@ const App: React.FC = () => {
               className="flex items-center gap-2 rounded-lg px-3 py-2 transition hover:bg-slate-50"
               aria-label="Viet Beauty"
             >
-              <svg
-                xmlns="http://www.w3.org/2000/svg"
-                viewBox="0 0 120 140"
-                className="h-12 w-12"
-                role="img"
-                aria-hidden="true"
-              >
-                <title>Viet Beauty</title>
-                <path
-                  d="M60 6C35 20 15 46 15 77c0 26 17 52 45 62c28-10 45-36 45-62C105 46 85 20 60 6Z"
-                  fill="#1bb3a5"
-                  stroke="#0a3f46"
-                  strokeWidth="5"
-                  strokeLinecap="round"
-                  strokeLinejoin="round"
-                />
-                <path
-                  d="M90 28c11 13 18 29 18 49c0 24-16 48-38 57"
-                  fill="#1bb3a5"
-                  opacity="0.75"
-                />
-                <path
-                  d="M60 28v84M60 52c-8 8-17 14-26 17M60 70c-10 10-22 19-36 24M60 91c-9 10-18 17-29 22"
-                  fill="none"
-                  stroke="#0a3f46"
-                  strokeWidth="5"
-                  strokeLinecap="round"
-                />
-                <text
-                  x="60"
-                  y="126"
-                  textAnchor="middle"
-                  fontSize="14"
-                  fill="#0a3f46"
-                  fontFamily="'Inter', 'Helvetica', 'Arial', sans-serif"
-                  fontWeight="700"
-                  letterSpacing="1.5"
-                >
-                  VIET BEAUTY
-                </text>
-              </svg>
+              <img
+                src="data:image/svg+xml;base64,PHN2ZyB4bWxucz0iaHR0cDovL3d3dy53My5vcmcvMjAwMC9zdmciIHdpZHRoPSIxODAiIGhlaWdodD0iNTYiIHZpZXdCb3g9IjAgMCAxODAgNTYiIHJvbGU9ImltZyIgYXJpYS1sYWJlbGxlZGJ5PSJ0aXRsZSI+Cjx0aXRsZT5WaWV0IEJlYXV0eTwvdGl0bGU+CjxyZWN0IHdpZHRoPSIxODAiIGhlaWdodD0iNTYiIHJ4PSIxMiIgZmlsbD0id2hpdGUiLz4KPGcgdHJhbnNmb3JtPSJ0cmFuc2xhdGUoMTIgOCkiPgogIDxjaXJjbGUgY3g9IjIwIiBjeT0iMjAiIHI9IjIwIiBmaWxsPSIjZTZmN2Y0IiAvPgogIDxwYXRoIGQ9Ik0xMiAyNmM4LTEgMTgtOSAyMC0xOGMtOCAxLTE2IDktMTggMThjNyAwIDE0LTMgMTktOGMxLTIgMi00IDItNmMtOSA1LTE3IDYtMjMgMTR6IiBmaWxsPSIjMGZiMzljIiBzdHJva2U9IiMwYTNmNDYiIHN0cm9rZS13aWR0aD0iMiIgc3Ryb2tlLWxpbmVjYXA9InJvdW5kIiBzdHJva2UtbGluZWpvaW49InJvdW5kIi8+CiAgPHBhdGggZD0iTTE3IDE0YzIgNiA0IDEyIDQgMjAiIHN0cm9rZT0iIzBhM2Y0NiIgc3Ryb2tlLXdpZHRoPSIyIiBzdHJva2UtbGluZWNhcD0icm91bmQiLz4KPC9nPgo8dGV4dCB4PSI3MiIgeT0iMzMiIGZpbGw9IiMwYTNmNDYiIGZvbnQtZmFtaWx5PSJJbnRlciwgQXJpYWwsIHNhbnMtc2VyaWYiIGZvbnQtd2VpZ2h0PSI3MDAiIGZvbnQtc2l6ZT0iMTgiIGxldHRlci1zcGFjaW5nPSIxLjUiPlZJRVQgQkVBVVRZPC90ZXh0Pgo8L3N2Zz4="
+                alt="Viet Beauty"
+                className="h-12 w-auto"
+              />
             </a>
             {selectedGender && (
               <button

@@ -2,6 +2,7 @@ import React, { useState } from 'react';
 import ScalpMap from './components/ScalpMap';
 import { Gender } from './types';
 import { User, Sparkles, ArrowRight } from 'lucide-react';
+import VietBeautyLogo from './components/VietBeautyLogo';
 
 const App: React.FC = () => {
   const [selectedGender, setSelectedGender] = useState<Gender | null>(null);
@@ -9,21 +10,32 @@ const App: React.FC = () => {
   return (
     <div className="min-h-screen bg-gradient-to-br from-slate-50 to-slate-100 flex flex-col font-sans">
       
-      <header className="w-full bg-white shadow-sm border-b border-slate-100 py-4 z-10">
-        <div className="max-w-5xl mx-auto px-4 flex justify-between items-center">
+      <header className="w-full bg-white shadow-sm border-b border-slate-100 py-4 z-10 relative">
+        <div className="max-w-5xl mx-auto px-4 flex justify-between items-center gap-6 pr-28">
           <div>
             <h1 className="text-2xl font-bold text-slate-800 tracking-tight">Hair Analysis Tool</h1>
             <p className="text-slate-500 text-sm">Công cụ trực quan hóa sức khỏe da đầu</p>
           </div>
-          {selectedGender && (
-            <button 
-              onClick={() => setSelectedGender(null)}
-              className="text-sm text-slate-500 hover:text-rose-500 font-medium transition-colors"
-            >
-              Đổi giới tính
-            </button>
-          )}
+          <div className="flex items-center gap-4">
+            {selectedGender && (
+              <button
+                onClick={() => setSelectedGender(null)}
+                className="text-sm text-slate-500 hover:text-rose-500 font-medium transition-colors"
+              >
+                Đổi giới tính
+              </button>
+            )}
+          </div>
         </div>
+        <a
+          href="https://minoxidil.com.vn/"
+          target="_blank"
+          rel="noreferrer"
+          className="absolute right-4 top-1/2 -translate-y-1/2 bg-emerald-50 rounded-full px-3 py-2 hover:bg-emerald-100 transition-colors shadow-sm"
+          aria-label="Viet Beauty - Dược mỹ phẩm chính hãng"
+        >
+          <VietBeautyLogo />
+        </a>
       </header>
 
       <main className="flex-grow flex items-center justify-center p-4">
